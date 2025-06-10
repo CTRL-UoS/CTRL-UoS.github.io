@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTRL+</title>
+  <style>
+    /* Reset default styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Full-height body with flexbox centering */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    
+    /* Logo styling */
+    .logo {
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    /* Text styling */
+    .ctrl-text {
+      font-size: 2em;
+      display: inline-block;
+    }
+
+    .subheader {
+      font-size: 0.75em;
+      display: inline-block;
+    }
+    
+    /* Blinking cursor styling */
+    .cursor {
+      width: 10px;
+      height: 1em;
+      background-color: #fff;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-left: 4px;
+      animation: blink 1s step-start infinite;
+    }
+    
+    /* Keyframes for cursor blink */
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+      .ctrl-text {
+        font-size: 1.5em;
+      }
+      .logo {
+        max-width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="ctrlLogo.png" alt="Logo" class="logo">
+  <div class="ctrl-text">
+    CTRL+<span class="cursor"></span>
+  </div>
+  <div class="subheader">
+    Critical Technology Research Lab
+  </div>
+</body>
+</html>
